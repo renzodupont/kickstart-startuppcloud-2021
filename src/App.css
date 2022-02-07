@@ -1,3 +1,8 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 html,
 body,
 #root {
@@ -16,6 +21,10 @@ body,
 #root {
   padding: 25px;
   background-color: black;
+}
+
+#root {
+  background-color: #61dafb;
 }
 
 .App-logo {
@@ -57,8 +66,9 @@ body,
 
 .main {
   display: grid;
-  grid-template-columns: 15% 65% 15%;
+  grid-template-columns: 15% 65% 14%;
   column-gap: 10px;
+  margin-left: -2px;
   margin-bottom: 15px;
 }
 
@@ -72,6 +82,7 @@ body,
   grid-template-columns: 50% 48%;
   column-gap: 15px;
   text-align: justify;
+  font-size: 18px;
 }
 
 .right-panel {
@@ -88,7 +99,16 @@ body,
   min-height: 60px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
+  .content {
+    font-size: 15px;
+  }
+  .main {
+    grid-template-columns: 20% 68%;
+  }
+}
+
+@media (max-width: 850px) {
   .content {
     grid-template-columns: 98%;
   }
@@ -97,6 +117,12 @@ body,
   }
   .main {
     grid-template-columns: 20% 68%;
+  }
+}
+
+@media (max-width: 600px) {
+  .content {
+    font-size: 12px;
   }
 }
 

@@ -63,6 +63,16 @@ function App() {
             have evolved over the years, sometimes by accident, sometimes on
             purpose (injected humour and the like). Where does it come from?
           </p>
+          <img
+            src="https://s3-us-west-2.amazonaws.com/dentalmarketing-uploads/wp-content/uploads/2018/06/12150107/DMLogo.jpg"
+            alt=""
+            style={{
+              position: "relative",
+              zIndex: 5000,
+              width: "200px",
+              margin: "20px auto",
+            }}
+          />
         </div>
         <div className="white-background container right-panel" />
       </div>
