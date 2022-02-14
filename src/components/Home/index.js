@@ -1,9 +1,30 @@
+import { useState } from "react";
+import { Button } from "react-bootstrap";
 import Main from "../Main";
 
 const Home = () => {
+  const [back, setBack] = useState({ backgroundColor: "green" });
+
+  const updateCss = () => {
+    if (back.backgroundColor === "red") setBack(myButtonStyle2);
+    else setBack(myButtonStyle1);
+  };
+
+  const myButtonStyle1 = { backgroundColor: "red" };
+  const myButtonStyle2 = { backgroundColor: "black" };
+  console.log("Pase por aca");
+
   const e = (
     <>
       <p>
+        <Button
+          variant="dark"
+          id="myButton"
+          onClick={(e) => updateCss()}
+          style={back}
+        >
+          Click Me
+        </Button>
         What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing
         and typesetting industry. Lorem Ipsum has been the industry's standard
         dummy text ever since the 1500s, when an unknown printer took a galley

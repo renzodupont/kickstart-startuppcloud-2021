@@ -76,6 +76,15 @@ body,
   border: 1px solid gray;
 }
 
+div.nav {
+  padding: 10px;
+}
+
+div.nav a {
+  color: red !important;
+  margin-left: 15px;
+}
+
 .content {
   padding: 20px;
   display: grid;

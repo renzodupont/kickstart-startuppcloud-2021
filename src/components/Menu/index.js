@@ -5,7 +5,9 @@ const Menu = () => {
   return (
     <Nav activeKey="/" className="white-background">
       <Nav.Item>
-        <NavLink to={"/"}>Home</NavLink>
+        <NavLink to={"/"} style={{ color: "black" }}>
+          Home
+        </NavLink>
       </Nav.Item>
       <Nav.Item>
         <NavLink to={"/blog"}>Blog</NavLink>
